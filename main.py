@@ -7,10 +7,10 @@ user = get_login_details()
 if user == "new user":
     user = create_new_user()
 elif user == False:
-    print("Goodbye! Wish to see you soon")
+    print("\nGoodbye! Wish to see you soon\n")
 else:
-    print("Login Successful")
-while True:
+    print("\nLogin Successful\n")
+while user != False:
     status = user_session(user)
     if status == "logout":
         break
